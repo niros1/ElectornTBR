@@ -22,22 +22,32 @@ function CreateMenu(){
 
 
 
+
 function GetReady(){
+   
+
+
   SpawnServer();
   console.log('Waiting for server,');
-  setTimeout(createWindow, 3000);
+  setTimeout(createWindow, 10000);
   
 }
 
 
-
-
-///////////////////Spawn server
+/////////////////Spawn server
 
 const spawn = require('child_process').spawn;
 var serverProc = null;
 function SpawnServer(){
-  serverProc = spawn("Resources\\MultiPlat\\Debug\\PcPlatformSvc.exe");   
+  var process = require('process');
+  var pathPrefix = "";
+
+  //Check if it's deployment package or dev, cmd.exe meaning dev
+  if(!process.title.includes("cmd.exe")){
+      pathPrefix = "resources\\app\\"
+  }
+
+  serverProc = spawn(pathPrefix + "Externals\\MultiPlat\\Debug\\PcPlatformSvc.exe");   
   serverProc.stdout.on('data', (data) => {
     console.log(data);
   });
