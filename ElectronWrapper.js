@@ -14,7 +14,7 @@ var Main = (function () {
         Main.mainWindow =
             new Main.BrowserWindow({ width: 800, height: 600 });
         Main.mainWindow
-            .loadURL('file://' + __dirname + '/index.html');
+            .loadURL('http://ynet.co.il');
         Main.mainWindow.on('closed', Main.onClose);
     };
     Main.main = function (app, browserWindow) {
@@ -31,26 +31,4 @@ var Main = (function () {
 }());
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = Main;
-// class Main {
-//     fullName: string;
-//     //myWin: BrowserWindow();
-//     //private mainWin : Electron.BrowserWindow;
-//     constructor(public firstName, public middleInitial, public lastName) {
-//         this.fullName = firstName + " XXX" + middleInitial + " " + lastName;
-//         var win1 = new impElectron.BrowserWindow();  
-//         console.log("test");
-//     }
-// }
-// export default class Main{
-//     //private mainWin : Electron.BrowserWindow;        
-//     private str1 : string;
-//     static main(){
-//         console.log("test");
-//     }
-// }
-// function greeter(person) {
-//     var mainWIn : Electron.BrowserWindow;
-//     return "Hello, " + person;
-// }
-//} 
 //# sourceMappingURL=ElectronWrapper.js.map
