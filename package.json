@@ -1,5 +1,5 @@
 {
-  "name": "TBR",
+  "name": "tbr",
   "version": "1.0.0",
   "description": "TbrDemo",
   "main": "Main.js",
@@ -23,5 +23,13 @@
     "win": {
       "iconUrl": "http://eatodo.s3.amazonaws.com/icon.ico"
     }
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niros1/ElectornTBR.git"
+  },
+  "bugs": {
+    "url": "https://github.com/niros1/ElectornTBR/issues"
+  },
+  "homepage": "https://github.com/niros1/ElectornTBR#readme"
 }

@@ -1,0 +1,5 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    // When set to true, imports will show the namespace in parenthesis
+    "TypeScriptImporter.showNamespaceOnImports": true
+}
